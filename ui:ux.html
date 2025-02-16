@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shafakhana Chatbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, rgba(5, 5, 5, 0.9), rgba(13, 71, 161, 0.9));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .chat-container {
+            width: 350px;
+            background: linear-gradient(to top, rgba(13, 71, 161, 0.2), rgba(18, 18, 18, 1));
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #2a2a2a;
+        }
+        .chat-header {
+            background: #0b3c91;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .chat-body {
+            padding: 15px;
+            height: 300px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 20px 20px 20px 5px;
+            max-width: 80%;
+        }
+        .message.sent {
+            background: #0b3c91;
+            color: white;
+            align-self: flex-end;
+            border-radius: 20px 20px 5px 20px;
+        }
+        .message.received {
+            background: #1c2940;
+            color: white;
+            align-self: flex-start;
+        }
+        .chat-footer {
+            display: flex;
+            padding: 10px;
+            background: #121a2b;
+            border-top: 1px solid #2a2a2a;
+        }
+        .chat-footer input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #1c2940;
+            color: white;
+        }
+        .chat-footer button {
+            background: #0b3c91;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .chat-footer button:hover {
+            background: #072c70;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">Shafakhana Chatbox</div>
+        <div class="chat-body">
+            <div class="message received">Hello! How can I help you?</div>
+            <div class="message sent">Hi! I have a question.</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" placeholder="Type a message...">
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+</html>
